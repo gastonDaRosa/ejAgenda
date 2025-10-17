@@ -26,7 +26,7 @@ public class ControladorLogin {
         Usuario usuarioLogueado = Fachada.getInstancia().login(usuario, pass);
         sesion.setAttribute("usuarioLogueado", usuarioLogueado);
 
-        return Respuesta.lista(new Respuesta("loginExitoso", "Bienvenido") );
+        return Respuesta.lista(new Respuesta("loginExitoso", "usuario/agenda.html") );
     }
     
 }

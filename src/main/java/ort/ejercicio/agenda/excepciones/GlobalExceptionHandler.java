@@ -1,4 +1,4 @@
-package uy.edu.ort.agenda.excepciones;
+package ort.ejercicio.agenda.excepciones;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

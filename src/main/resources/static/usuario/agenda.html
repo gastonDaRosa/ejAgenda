@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Agendas</title>
+    <link rel="stylesheet" href="stylesAgenda.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Agregar Contacto</h2>
+            <form id="contactForm">
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre del contacto" required>
+                </div>
+                <div class="input-group">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Teléfono del contacto" required>
+                </div>
+                <div class="input-group">
+                    <label for="tipo">Tipo de Contacto</label>
+                    <select id="tipo" name="tipo" required>
+                        <!-- Lista de tipos cargada con JavaScript -->
+                    </select>
+                </div>
+                <button type="submit" class="btn">Agregar Contacto</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Lista de Contactos</h2>
+            <div id="contactTable">
+                <!-- Tabla de contactos cargada con JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
