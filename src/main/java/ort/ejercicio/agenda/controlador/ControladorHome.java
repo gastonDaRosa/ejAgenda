@@ -8,7 +8,7 @@ public class ControladorHome {
 
     @GetMapping("/")
     public String home() {
-        return "redirect:/index.html";
+        return "redirect:/login/login.html";
     }
     
 }

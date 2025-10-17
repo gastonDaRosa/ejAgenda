@@ -7,6 +7,7 @@ import ort.ejercicio.agenda.excepciones.AgendaException;
 import ort.ejercicio.agenda.modelo.Contacto;
 import ort.ejercicio.agenda.modelo.TipoContacto;
 import ort.ejercicio.agenda.modelo.Usuario;
+import ort.ejercicio.agenda.servicio.ServicioUsuario;
 import ort.ejercicio.agenda.servicio.fachada.Fachada;
 
 @SpringBootApplication
@@ -39,6 +40,8 @@ public class AgendaApplication {
 		Fachada.getInstancia().agregar(ana);
 		Fachada.getInstancia().agregar(beatriz);
 		Fachada.getInstancia().agregar(carlos);
+
+
 
 	}
 

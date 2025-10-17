@@ -8,8 +8,8 @@ import ort.ejercicio.agenda.modelo.Usuario;
 
 public class ServicioAgenda {
 
-    private static ArrayList<Contacto> contactos;
-    private static ArrayList<TipoContacto> tipos;
+    private static ArrayList<Contacto> contactos = new ArrayList<Contacto>();
+    private static ArrayList<TipoContacto> tipos = new ArrayList<TipoContacto>();
 
     /*
     private static ServicioAgenda instancia;

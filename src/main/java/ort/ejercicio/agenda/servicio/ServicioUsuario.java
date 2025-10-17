@@ -7,7 +7,7 @@ import ort.ejercicio.agenda.modelo.Usuario;
 
 public class ServicioUsuario {
 
-    private static ArrayList<Usuario> usuarios;
+    private static ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 
 
     /*
