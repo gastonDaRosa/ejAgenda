@@ -21,9 +21,9 @@ import ort.ejercicio.agenda.servicio.fachada.Fachada;
 public class ControladorLogin {
     
     @PostMapping("login")
-    public List<Respuesta> login(HttpSession sesion, @RequestParam String usuario, @RequestParam String pass) {
+    public List<Respuesta> login(HttpSession sesion, @RequestParam String usuario, @RequestParam String password) {
         
-        Usuario usuarioLogueado = Fachada.getInstancia().login(usuario, pass);
+        Usuario usuarioLogueado = Fachada.getInstancia().login(usuario, password);
         sesion.setAttribute("usuarioLogueado", usuarioLogueado);
 
         return Respuesta.lista(new Respuesta("loginExitoso", "usuario/agenda.html") );

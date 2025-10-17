@@ -45,6 +45,10 @@ public class Usuario{
         this.agenda = agenda;
     }
 
+    public boolean contrsenaValida(String passIngre){
+        return (this.contra.equals(passIngre));
+    }
+
     
 
     

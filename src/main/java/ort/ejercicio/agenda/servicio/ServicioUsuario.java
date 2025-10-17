@@ -31,7 +31,7 @@ public class ServicioUsuario {
     }
     public static Usuario comprobarUsuario(String usu, String pass) {
            for(Usuario u:usuarios){
-               if(u.getUsuario().equals(usu) && u.getContra().equals(pass)){
+               if(u.getUsuario().equals(usu) && u.contrsenaValida(pass)){
                    return u;
                }
            }

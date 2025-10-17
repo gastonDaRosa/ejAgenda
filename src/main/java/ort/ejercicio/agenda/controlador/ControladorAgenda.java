@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import ort.ejercicio.agenda.dto.ContactoDto;
+import ort.ejercicio.agenda.dto.TipoContactoDto;
 import ort.ejercicio.agenda.modelo.Respuesta;
 import ort.ejercicio.agenda.servicio.fachada.Fachada;
 
@@ -18,13 +19,17 @@ public class ControladorAgenda {
 
     @PostMapping("/vistaConectada")
     public List<Respuesta> vistaConectada() {
-        return Respuesta.lista(contactos());
+        return Respuesta.lista(contactos(), tipoContactos());
     }
 
-    private Respuesta contactos() {
-        
+    private Respuesta contactos() { 
         return new Respuesta("contactos",
-                      ContactoDto.listaDtos(Fachada.getInstancia().getContactos()));
+                      ContactoDto.listaDtos(Fachada.getInstancia().getContactos())); 
+    }
+
+    private Respuesta tipoContactos() {
+        return new Respuesta("contactos",
+                      TipoContactoDto.listaDtos(Fachada.getInstancia().getTipoContactos()));
         
     }
     
